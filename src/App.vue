@@ -1,14 +1,18 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/filter_list">フィルターリスト</router-link>|
+      <router-link to="/jump_list">ジャンプリスト</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
+body {
+  padding: 0;
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +22,8 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 2rem;
+  height: 1rem;
 
   a {
     font-weight: bold;
